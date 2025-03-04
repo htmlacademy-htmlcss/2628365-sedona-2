@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="main-navigation">
         <a class="main-link" href="index.html">
           <img class="navigation-logo" src="" alt="Логотип города Седона">
@@ -48,9 +48,12 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Город Седона</h1>
-      <section class="advantages">
+
+      <img class="hero" src="" alt="Welcome to the gorgeous Sedona, because Grand Canyon sucks!">
+
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преймущества города Седоны</h2>
         <p class="advantages-title"><b>Седона</b> — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -73,9 +76,9 @@
             <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item advantages-item-media">
-            <img class="advantages-item-image" src="" alt="Мост дьявола">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="advantages-item-image" src="" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -107,7 +110,7 @@
         <a class="button booking-button" href="#">Поиск гостинницы в седоне</a>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -118,7 +121,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
