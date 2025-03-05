@@ -7,8 +7,8 @@
   <body>
     <header class="main-header" data-test="header">
       <nav class="main-navigation">
-        <a class="main-link" href="index.html">
-          <img class="navigation-logo" src="" alt="Логотип города Седона">
+        <a class="main-link" aria-current="page" href="index.html">
+          <img class="navigation-logo" src="images/sedona-logo.png" width="140" height="70" alt="Логотип города Седона">
         </a>
 
         <ul class="navigation-list">
@@ -38,6 +38,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span> 12</span>
             </a>
           </li>
         </ul>
@@ -49,9 +50,10 @@
     </header>
 
     <main class="main-index" data-test="main">
-      <h1 class="visually-hidden">Город Седона</h1>
-
-      <img class="hero" src="" alt="Welcome to the gorgeous Sedona, because Grand Canyon sucks!">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">Город Седона</h1>
+        <img class="hero-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because Grand Canyon sucks!">
+      </section>
 
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преймущества города Седоны</h2>
@@ -61,7 +63,7 @@
           <li class="advantages-item advantages-item-media">
             <h3 class="advantages-item-title">Настоящий городок</h3>
             <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-item-image" src="" alt="Городок Седона">
+            <img class="advantages-item-image" src="images/advantages/photo-1.jpg" width="800" height="385" alt="Фото городка Седона">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -78,7 +80,7 @@
           <li class="advantages-item advantages-item-media">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-item-image" src="" alt="Мост дьявола">
+            <img class="advantages-item-image" src="images/advantages/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -145,7 +147,7 @@
       </address>
 
       <a class="developer-link" href="https://htmlacademy.ru/">
-        <img class="developer-logo" src="" alt="Логотип html academy">
+        <img class="developer-logo" src="images/socials/html-academy-logo.svg" alt="Логотип html academy">
       </a>
     </footer>
   </body>
