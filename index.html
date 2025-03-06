@@ -44,7 +44,7 @@
           </li>
         </ul>
 
-        <a class="button navigation-button" href="#">
+        <a class="button navigation-button base-button" href="#">
           Хочу сюда!
         </a>
       </nav>
@@ -106,20 +106,20 @@
         </ul>
       </section>
 
-      <section class="booking">
+      <section class="booking" data-test="search">
         <h2 class="visually-hidden">Бронирование гостинницы</h2>
         <p class="booking-title">Заинтересовались?</p>
         <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button booking-button" href="#">Поиск гостинницы в седоне</a>
+        <a class="button base-button booking-button" href="#">Поиск гостинницы в седоне</a>
       </section>
 
-      <section class="subscription" data-test="subscribe">
+      <section class="subscription subscription-decorated" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-description subscription-decorated-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта</label>
           <input class="subscription-form-email" type="text" name="subscription-email" id="subscription-email" placeholder="Ваша электронная почта" required>
-          <button class="button subscription-form-button" type="submit">Подписаться</button>
+          <button class="button button-second subscription-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

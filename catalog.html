@@ -44,7 +44,7 @@
           </li>
         </ul>
 
-        <a class="button navigation-button" href="#">
+        <a class="button navigation-button base-button" href="#">
           Хочу сюда!
         </a>
       </nav>
@@ -52,7 +52,7 @@
 
     <main class="main-hotels">
       <section class="hotels-catalog">
-        <h1>Гостиницы Седоны</h1>
+        <h1 class="hotels-catalog-title">Гостиницы Седоны</h1>
 
         <ul class="catalog-breadcrumbs-list">
           <li class="catalog-breadcrumbs-item">
@@ -66,10 +66,8 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Фильтры каталога</h2>
-        <form class="catalog-filter" data-test="filter" action="https://echo.htmlacademy.ru/" method="get">
+
+        <form class="catalog-filter-form" data-test="filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-group-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -125,7 +123,7 @@
             -->
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
+          <button class="button button-second" type="submit">Применить</button>
           <button class="button button-alpha" type="reset">Сбросить</button>
         </form>
       </section>
@@ -140,13 +138,13 @@
 
         <ul class="view-type-list" aria-label="Способ отображения каталога">
           <li class="view-type-item">
-            <button class="button catalog-view-mode-button visually-hidden" type="button">В виде сетки</button>
+            <button class="toggle-button catalog-view-mode-button visually-hidden" type="button">В виде сетки</button>
           </li>
           <li class="view-type-item">
-            <button class="button catalog-view-mode-button visually-hidden" type="button">В виде слайдшоу</button>
+            <button class="toggle-button catalog-view-mode-button visually-hidden" type="button">В виде слайдшоу</button>
           </li>
           <li class="view-type-item">
-            <button class="button catalog-view-mode-button visually-hidden" type="button">В виде списка</button>
+            <button class="toggle-button catalog-view-mode-button visually-hidden" type="button">В виде списка</button>
           </li>
         </ul>
 
@@ -156,52 +154,52 @@
               <img class="hotel-card-picture" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Вид из ущелья">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="hotel-card-description">Гостинница <b>От 4000₽</b></p>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <p class="hotel-card-description">Гостинница <span>От 4000₽</span></p>
+            <a class="button base-button" href="#">Подробнее</a>
+            <button class="button button-second" type="button">В избранное</button>
             <p class="hotel-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
-            <p>Рейтинг: 8,5</p>
+            <p class="hotel-rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-picture" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Пейзаж со скалистым горным хребтом">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="hotel-card-description">Гостинница <b>От 5000₽</b></p>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранном</button>
+            <p class="hotel-card-description">Гостинница <span>От 5000₽</span></p>
+            <a class="button base-button" href="#">Подробнее</a>
+            <button class="button button-selected" type="button">В избранном</button>
             <p class="hotel-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
-            <p>Рейтинг: 9,2</p>
+            <p class="hotel-rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-picture" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Красная скала">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <p class="hotel-card-description">Гостинница <b>От 2500₽</b></p>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <p class="hotel-card-description">Гостинница <span>От 2500₽</span></p>
+            <a class="button base-button" href="#">Подробнее</a>
+            <button class="button button-second" type="button">В избранное</button>
             <p class="hotel-stars">
               <span class="visually-hidden">Отель 3 звезды</span>
             </p>
-            <p>Рейтинг: 6,9</p>
+            <p class="hotel-rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-picture" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Ночное небо, усыпанное звездами, над красной скалой, освещенной оранжевым светом.">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <p class="hotel-card-description">Гостинница <b>От 1500₽</b></p>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <p class="hotel-card-description">Гостинница <span>От 1500₽</span></p>
+            <a class="button base-button" href="#">Подробнее</a>
+            <button class="button button-second" type="button">В избранное</button>
             <p class="hotel-stars">
               <span class="visually-hidden">Отель 2 звезды</span>
             </p>
-            <p>Рейтинг: 5,0</p>
+            <p class="hotel-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
 
@@ -233,7 +231,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Электронная почта</label>
           <input class="subscription-form-email" type="text" name="subscription-email" id="subscription-email" placeholder="Ваша электронная почта" required>
-          <button class="button subscription-form-button" type="submit">Подписаться</button>
+          <button class="button button-second subscription-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

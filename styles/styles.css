@@ -34,4 +34,166 @@ body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation a{
+  text-decoration: none;
+}
+
+.navigation-link{
+  color: #000000;
+}
+
+.navigation-list{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.base-button{
+  color: #ffffff;
+  background: #756157;
+}
+
+.button-second{
+  color: #ffffff;
+  background: #82B3D3;
+}
+
+.button-selected{
+  color: #ffffff;
+  background: #7DB54F;
+}
+
+.main-index{
+  text-align: center;
+}
+
+.hero{
+  background-image: url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #82B3D3;
+}
+
+.advantages-title, .features-title, .booking-title, .subscription-title, .hotels-counter{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-description, .features-description, .booking-description, .subscription-description{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.advantages-item-title, .features-item-title, .hotel-card-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-description, .features-item-description{
+  color: #333333;
+}
+
+.subscription-decorated{
+  background-image: url("../images/subscription-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.subscription-decorated-description{
+  color: #ffffff;
+}
+
+.subscription-form-button{
+  border-radius: 0 4px 4px 0;
+}
+
+.contacts-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotels-catalog{
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.catalog-breadcrumbs-link{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hotels-catalog-title{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-group-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control{
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-link{
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-description{
+  color: #333333;
+}
+
+.hotel-rating{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.pagination-button-active{
+  background-color: #F2F2F2;
+  color: #000000;
 }
