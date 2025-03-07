@@ -36,6 +36,7 @@ body{
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
 }
 
 .main-navigation a{
@@ -62,6 +63,7 @@ body{
 }
 
 .button{
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -100,10 +102,14 @@ body{
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: #82B3D3;
+  background-color: #7DB54F;
 }
 
 .advantages-item{
+  background-color: #83B3D31F;
+}
+
+.advantages-medium{
   background-color: #83B3D333;
 }
 
@@ -140,6 +146,14 @@ body{
   color: #333333;
 }
 
+.features-item:nth-child(odd){
+  background-color: #83B3D31F;
+}
+
+.features-item:nth-child(even){
+  background-color: #ffffff;
+}
+
 .booking-button{
   font-size: 20px;
   line-height: 36px;
@@ -149,7 +163,7 @@ body{
   background-image: url("../images/subscription-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #82B3D3;
+  background-color: #7DB54F;
   color: #ffffff;
 }
 
@@ -164,17 +178,19 @@ body{
 }
 
 .contacts-phone{
+  font-style: normal;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 .hotels-catalog{
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: #82B3D3;
+  background-color: #7DB54F;
   color: #ffffff;
 }
 
@@ -199,6 +215,13 @@ body{
 .control{
   font-size: 18px;
   line-height: 23px;
+}
+
+.select-control{
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .hotel-card-link{
