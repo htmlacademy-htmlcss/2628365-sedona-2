@@ -816,6 +816,8 @@ body{
 
 .pagination-button, .pagination-ellipsis{
   font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   display: flex;
@@ -824,8 +826,6 @@ body{
   padding: 0 12px;
   min-width: 36px;
   height: 60px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .pagination-button{
