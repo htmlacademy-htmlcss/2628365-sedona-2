@@ -68,6 +68,7 @@ body{
   text-decoration: none;
   border-radius: 4px;
   border: none;
+  box-sizing: border-box;
 }
 
 .button-small{
@@ -82,6 +83,7 @@ body{
 
 .button-huge{
   padding: 8px 50px;
+  min-width: 191px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -91,8 +93,33 @@ body{
   background: #756157;
 }
 
+.button-primary:hover, .button-primary:focus-visible{
+  background: #615048;
+  outline: none;
+}
+
+.button-primary:active{
+  color: #FFFFFF4D;
+  background: #756157;
+}
+
+.button-primary:disabled, .button-secondary:disabled, .button-selected:disabled{
+  color: #FFFFFF;
+  background: #E5E5E5;
+}
+
 .button-secondary{
   color: #ffffff;
+  background: #82B3D3;
+}
+
+.button-secondary:hover, .button-secondary:focus-visible{
+  background: #68A2CA;
+  outline: none;
+}
+
+.button-secondary:active{
+  color: #FFFFFF4D;
   background: #82B3D3;
 }
 
@@ -101,8 +128,39 @@ body{
   background: none;
 }
 
+.button-alpha:hover{
+  opacity: 0.6;
+}
+
+.button-alpha:focus-visible{
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.button-alpha:focus-visible.button-huge{
+  padding: 5px 47px;
+}
+
+.button-alpha:active{
+  color: #FFFFFF4D;
+}
+
+.button-alpha:disabled{
+  opacity: 0.1;
+}
+
 .button-selected{
   color: #ffffff;
+  background: #7DB54F;
+}
+
+.button-selected:hover, .button-selected:focus-visible{
+  background: #6C9E42;
+  outline: none;
+}
+
+.button-selected:active{
+  color: #FFFFFF4D;
   background: #7DB54F;
 }
 
@@ -145,6 +203,16 @@ body{
   color: #000000;
 }
 
+.navigation-link:hover::after{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756157;
+}
+
 .navigation-user{
   width: 312px;
   justify-content: flex-end;
@@ -157,14 +225,27 @@ body{
 }
 
 .navigation-user .navigation-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 22px 12px;
   min-width: 20px;
   min-height: 20px;
 }
 
+.navigation-user .navigation-link:hover::after{
+  left: 12px;
+  width: calc(100% - 24px);
+}
+
 .favorites-badge{
   position: absolute;
-  right: 0;
+  right: 4px;
+  top: 11px;
+  width: 20px;
+  height: 15px;
+  padding-top: 5px;
+  border-radius: 10px;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -388,10 +469,27 @@ body{
   display: flex;
 }
 
-.social-item{
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #83B3D3;
   padding: 0 10px;
-  width: 47px;
+  width: 27px;
   height: 40px;
+}
+
+.social-link:hover{
+  color: #68A2CA;
+}
+
+.social-link:focus-visible{
+  color: #68A2CA;
+  outline: none;
+}
+
+.social-link:active{
+  color: #68A2CA4D;
 }
 
 .contacts-phone{
@@ -399,8 +497,38 @@ body{
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  color: #000000;
   text-decoration: none;
+}
+
+.developer-link{
+  display: flex;
+  align-items: center;
+}
+
+.developer-link, .contacts-phone{
+  color: #000000;
+}
+
+.developer-link:visited, .contacts-phone:visited{
+  color: #000000;
+}
+
+.developer-link:hover, .contacts-phone:hover{
+  color: #756157;
+}
+
+.developer-link:focus-visible, .contacts-phone:focus-visible{
+  color: #756157;
+  outline: none;
+}
+
+.developer-link:active, .contacts-phone:active{
+  color: #7561574D;
+}
+
+.developer-logo{
+  width: 115px;
+  height: 34px;
 }
 
 .hotels-catalog{
@@ -427,11 +555,32 @@ body{
 
 .catalog-breadcrumbs-item{
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-breadcrumbs-item:not(:last-child)::after{
+  display: block;
+  content: "";
+  margin-left: 10px;
+  width: 8px;
+  height: 10px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-breadcrumbs-link{
   color: #ffffff;
   text-decoration: none;
+}
+
+.catalog-breadcrumbs-link:hover{
+  color: #FFFFFF99;
+}
+
+.catalog-breadcrumbs-link:active{
+  color: #FFFFFF4D;
 }
 
 .catalog-filter-form{
@@ -453,6 +602,18 @@ body{
 
 .catalog-filter-group:last-child{
   margin-right: 0;
+}
+
+.catalog-filter-button-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.catalog-filter-button-group .button-huge{
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .catalog-filter-list{
@@ -506,6 +667,43 @@ body{
 .view-type-list{
   display: flex;
   gap: 8px;
+}
+
+.view-type-item{
+  width: 48px;
+  height: 48px;
+}
+
+.catalog-view-mode-button{
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+}
+
+.catalog-view-mode-button:hover, .catalog-view-mode-button:active{
+  border-color: #000000;
+}
+
+.catalog-view-mode-button:focus-visible{
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.grid-mode{
+  background-image: url("../images/catalog-view-mode/grid-mode.svg");
+}
+
+.list-mode{
+  background-image: url("../images/catalog-view-mode/list-mode.svg");
+}
+
+.slide-show-mode{
+  background-image: url("../images/catalog-view-mode/slide-show-mode.svg");
 }
 
 .hotels-list{
@@ -585,7 +783,20 @@ body{
 }
 
 .stars-list{
+  height: 100%;
   display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.star{
+  width: 18px;
+  height: 17px;
+}
+
+.star-active{
+  background-image: url("../images/hotels-star.svg");
+  background-repeat: no-repeat;
 }
 
 .hotel-card-title-link{
@@ -603,20 +814,23 @@ body{
   flex-wrap: wrap;
 }
 
-.pagination-button{
+.pagination-button, .pagination-ellipsis{
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #82B3D3;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 12px;
   min-width: 36px;
   height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagination-button{
+  background-color: #82B3D3;
+  color: #ffffff;
 }
 
 .pagination-ellipsis{
@@ -624,7 +838,22 @@ body{
   color: #000000;
 }
 
-.pagination-button-active{
+.pagination-button:hover, .pagination-button:focus-visible{
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+  min-width: 34px;
+  height: 58px;
+  outline: none;
+}
+
+.pagination-button:active{
+  color: #FFFFFF4D;
+}
+
+.pagination-button-active, .pagination-button-active:hover, .pagination-button-active:focus-visible, .pagination-button-active:active{
   background-color: #F2F2F2;
   color: #000000;
+  border: none;
+  min-width: 36px;
+  height: 60px;
 }
