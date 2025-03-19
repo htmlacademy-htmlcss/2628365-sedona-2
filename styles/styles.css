@@ -662,6 +662,7 @@ body{
 .catalog-menu{
   display: flex;
   gap: 70px;
+  align-items: center;
 }
 
 .view-type-list{
