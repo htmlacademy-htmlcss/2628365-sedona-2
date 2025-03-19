@@ -203,7 +203,7 @@ body{
   color: #000000;
 }
 
-.navigation-link:hover::after{
+.navigation-link:hover::after, .navigation-link-active::after{
   content: "";
   position: absolute;
   bottom: -1px;
@@ -342,6 +342,23 @@ body{
   color: #ffffff;
 }
 
+.advantages-item-title::after{
+  display: block;
+  content: "";
+  margin: 30px auto 0;
+  width: 60px;
+  height: 2px;
+  background-color: #0000004D;
+}
+
+.advantages-item-media__text-wrapper .advantages-item-title::after{
+  background-color: #FFFFFF4D;
+}
+
+.advantages-item:not(.advantages-item-media){
+
+}
+
 .advantages-item-media .advantages-item-description{
   color: #ffffff;
 }
@@ -376,6 +393,33 @@ body{
 
 .features-description{
   margin-bottom: 64px;
+}
+
+.features-item:before{
+  content: "";
+  position: absolute;
+  top: 81px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
+.feature-house::before{
+  background-image: url("../images/features/house.svg");
+}
+.feature-food::before{
+  background-image: url("../images/features/food.svg");
+}
+.feature-gift::before{
+  background-image: url("../images/features/gift.svg");
+}
+
+.features-item{
+  position: relative;
+  padding-top: 183px;
 }
 
 .features-item:nth-child(odd){
