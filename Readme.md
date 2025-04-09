@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей](https://up.htmlacademy.ru/htmlcss-individual/2/user/2628365).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/yermolayev).
+* Сайт: [Ссылка на проект](https://far4ich.github.io/2628365-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
