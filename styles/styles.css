@@ -235,7 +235,14 @@ body{
 .navigation-user-button{
   display: flex;
   margin-left: 20px;
+  padding: 4px 0;
   align-items: center;
+}
+
+.navigation-user-button .button{
+  max-width: 170px;
+  text-align: center;
+  text-wrap: wrap;
 }
 
 .navigation-user .navigation-link{
@@ -718,6 +725,7 @@ body{
   width: 20px;
   height: 20px;
   background-color: #ffffff;
+  flex-shrink: 0;
 }
 
 .control-input[type="checkbox"] + .control-mark{
@@ -843,6 +851,11 @@ body{
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
+}
+
+.range-wrapper-inputs .control-input{
+  appearance: textfield;
+  font-family: "PT Sans", sans-serif;
 }
 
 .control-input:hover{
@@ -1385,6 +1398,7 @@ body{
   width: 31px;
   padding: 14px 40px;
   line-height: 20px;
+  appearance: textfield;
 }
 
 .count-input-wrapper .modal-input::-webkit-outer-spin-button,
